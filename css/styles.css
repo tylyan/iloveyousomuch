@@ -1,0 +1,18 @@
+body {
+	font-family: 'Indie Flower', cursive;
+}
+
+.content {
+	grid-area: content;
+	justify-self: center;
+	text-align: center;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr [col-start]);
+	grid-template-rows: repeat(3, 1fr [row-start]);
+	grid-template-areas:
+		". . ."
+		". . ."
+		"content content content";
+}
