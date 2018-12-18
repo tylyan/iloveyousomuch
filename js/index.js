@@ -1,5 +1,5 @@
 const anniversary = moment("12-14-2017 14:00 +0000", "MM-DD-YYYY HH:mm Z")
-const today = moment("+0000", "Z")
+const today = moment()
 const totalDays = today.diff(anniversary, 'days')
 const years = Math.floor(totalDays / 365)
 const days = totalDays % 365
